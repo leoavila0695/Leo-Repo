@@ -253,12 +253,44 @@
 
 # PRINT ITEM BY ITEM 
 # a = 'helloooooooooo'
-
 # if ((n := len(a)) > 10):
 #     print(f"too long {n} elements")
-
 # while ((n := len(a)) > 1):
 #     print(n)
 #     a = a[:-1]
-
 # print(a)
+
+# OOP (Object Oriented Programming)
+
+# class PlayerCharacter:
+#   # Class Object Attribute 
+#   membership = True
+#   def __init__(self, name, age):
+#     if (PlayerCharacter.membership):
+#       self.name = name #Attributes
+#       self.age = age
+    
+#   def run(self):
+#     print("run")
+#     return "done"
+  
+#   def shout(self):
+#         print(f'my name is {self.name}')
+  
+# player1 = PlayerCharacter("Leo", 29)
+# player2 = PlayerCharacter("Vane", 30)
+
+# # print(player1.name, player1.age)
+# # print(player2.name, player2.age)
+# # print(player1.run())
+# print(player1.shout(),player2.shout())
+
+class PlayCha1:
+  def __init__(self, name='Leo', age=0):
+    if (age > 18):
+      self.name = name
+      self.age = age
+      
+  def another(self):
+    print(f'my name is {self.name}')
+    
