@@ -30,8 +30,19 @@ class CasoPractico1 {
         System.out.print("Please write text 2: ");
         String e = input.nextLine();
 
+        if (a > b && a > c) {
+            System.out.println("the biggest number is: " + a);
+        }
+        else if (b > a && b > c) {
+            System.out.println("the biggest number is: " + b);
+        }
+        else if (c > a && c > b) {
+            System.out.println("the biggest number is: " + c);
+        }
+
         System.out.println ("the sum of the first 3 numbers is: " + (a+b+c));
         System.out.print("first text plus second = " + d + e);
+        
 
         input.close();
     }
