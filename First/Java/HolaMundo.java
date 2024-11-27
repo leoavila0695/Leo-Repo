@@ -12,7 +12,7 @@ import java.util.Scanner;
 class CasoPractico1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
+// getting variables
         System.out.print("Please write the first number: ");
         int a = input.nextInt();
         
@@ -30,6 +30,11 @@ class CasoPractico1 {
         System.out.print("Please write text 2: ");
         String e = input.nextLine();
 
+        // Print the values
+        System.out.println ("the sum of the first 3 numbers is: " + (a+b+c));
+        System.out.println("first text plus second = " + d + " " + e);
+
+        // conditions to know the biggest number
         if (a > b && a > c) {
             System.out.println("the biggest number is: " + a);
         }
@@ -40,8 +45,13 @@ class CasoPractico1 {
             System.out.println("the biggest number is: " + c);
         }
 
-        System.out.println ("the sum of the first 3 numbers is: " + (a+b+c));
-        System.out.print("first text plus second = " + d + e);
+        // Division among float and Ints
+        float div1 = a / c;
+        float div2 = b / c;
+
+        System.out.println("First division among " + a + " and " + c + "= " + div1);
+        System.out.println("First division among " + b + " and " + c + "= " + div2);
+
         
 
         input.close();
