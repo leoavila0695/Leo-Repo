@@ -32,7 +32,6 @@ class CasoPractico1 {
 
         // Print the values
         System.out.println ("the sum of the first 3 numbers is: " + (a+b+c));
-        System.out.println("first text plus second = " + d + " " + e);
 
         // conditions to know the biggest number
         if (a > b && a > c) {
@@ -52,7 +51,9 @@ class CasoPractico1 {
         System.out.println("First division among " + a + " and " + c + "= " + div1);
         System.out.println("First division among " + b + " and " + c + "= " + div2);
 
-        
+        //Concatenation of String lines
+        System.out.println("first text plus second = " + d + " " + e);
+
 
         input.close();
     }
