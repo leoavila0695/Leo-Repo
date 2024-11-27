@@ -285,12 +285,45 @@
 # # print(player1.run())
 # print(player1.shout(),player2.shout())
 
-class PlayCha1:
-  def __init__(self, name='Leo', age=0):
-    if (age > 18):
-      self.name = name
-      self.age = age
+# class PlayCha1:
+#   def __init__(self, name='none', age=0):
+#     if (age > 18):
+#       self.name = name
+#       self.age = age
+#     else:
+#       self.name = 'none'
+#       self.age = 0
       
-  def another(self):
-    print(f'my name is {self.name}')
+#   def another(self):
+#     print(f'my name is {self.name}')
     
+# p1 = PlayCha1('Leo', 29)
+# p1.another()
+
+# my_answer
+# class Cat:
+#     species = 'mammal'
+    
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+    
+
+#     def the_oldest(cats):
+#         if cats[0].age >= cats[1].age and cats[0].age >= cats[2].age:
+#             print(f'The oldest cat is {cats[0].name}')
+#         elif cats[1].age >= cats[0].age and cats[1].age >= cats[2].age:
+#             print(f'The oldest cat is {cats[1].name}')
+#         elif cats[2].age >= cats[0].age and cats[2].age >= cats[1].age:
+#             print(f'The oldest cat is {cats[2].name}')
+            
+# # Crear los gatos
+# cat1 = Cat('Raul', 8)
+# cat2 = Cat('Luna', 3)
+# cat3 = Cat('Aren', 10)
+
+# # Lista de gatos
+# cats = [cat1, cat2, cat3]
+
+# # Llamar al método estático
+# Cat.the_oldest(cats)
