@@ -87,30 +87,43 @@
 // SOLUCION CASO PRACTICO 3
 // RANDOM NUMBER
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class CasoPractico3{
-    public static void main(String[] args){
-    Scanner input = new Scanner(System.in);
+// class CasoPractico3{
+//     public static void main(String[] args){
+//     Scanner input = new Scanner(System.in);
 
-    char letras[] = { 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P',
-    'D', 'X', 'B', 'N', 'J', 'Z', 'S','Q','V', 'H', 'L', 'C', 'K', 'E' };
+//     char letras[] = { 'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P',
+//     'D', 'X', 'B', 'N', 'J', 'Z', 'S','Q','V', 'H', 'L', 'C', 'K', 'E' };
 
-    // int dni [];
-    System.out.println("Type your DNI number: ");
-    int num = input.nextInt();
-    int size = String.valueOf(num).length();
+//     // int dni [];
+//     System.out.println("Type your DNI number: ");
+//     int num = input.nextInt();
+//     int size = String.valueOf(num).length();
 
-    if (size == 8){
-        System.out.println("This is your number: " + num + " and size: " + size);
-        int mod = num % 23;
-        char letter = letras[mod];
-        System.out.println("This is your number: " + num + letter);
-    }
+//     if (size == 8){
+//         System.out.println("This is your number: " + num + " and size: " + size);
+//         int mod = num % 23;
+//         char letter = letras[mod];
+//         System.out.println("This is your number: " + num + letter);
+//     }
 
-    else{
-    System.out.println("This is not a valid number...");
-    }
+//     else{
+//     System.out.println("This is not a valid number...");
+//     }
 
-    }
-}
+//     }
+// }
+
+// class OperadorTernario{
+//         public static void main(String[] args){
+
+// // int numero = 5;
+// // se asigna el String para imprimir un mensaje, se pone el igual y posterior la CONDICION 
+// // que debe seguir y finalmente se pone el "?" para indicar que debe pasar en caso de ser
+// // TRUE, ":" para decir ó FALSO lo que debe pasar en caso contrario...
+// // String resultado = (numero % 2 == 0) ? "Es par" : "Es impar";
+// // System.out.println(resultado);
+
+//     }
+// }
