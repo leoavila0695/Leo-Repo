@@ -118,12 +118,44 @@
 // class OperadorTernario{
 //         public static void main(String[] args){
 
-// // int numero = 5;
-// // se asigna el String para imprimir un mensaje, se pone el igual y posterior la CONDICION 
-// // que debe seguir y finalmente se pone el "?" para indicar que debe pasar en caso de ser
-// // TRUE, ":" para decir ó FALSO lo que debe pasar en caso contrario...
-// // String resultado = (numero % 2 == 0) ? "Es par" : "Es impar";
-// // System.out.println(resultado);
+//     int numero = 5;
+//     // se asigna el String para imprimir un mensaje, se pone el igual y posterior la CONDICION
+//     // que debe seguir y finalmente se pone el "?" para indicar que debe pasar en caso de ser
+//     // TRUE, ":" para decir ó FALSO lo que debe pasar en caso contrario...
+//     String resultado = (numero % 2 == 0) ? "Es par" : "Es impar";
+//     System.out.println(resultado);
 
+//         }
+// }
+
+
+
+// CREACION DE OBJETOS
+// class Persona {
+//     String nombre; // Atributo
+//     int edad;
+
+//     // Constructor: Sirve para inicializar el objeto
+//     Persona(String nombre, int edad) {
+//         this.nombre = nombre;
+//         this.edad = edad;
+//     }
+
+//     // Método: Define el comportamiento del objeto
+//     void mostrarInfo() {
+//         System.out.println("Nombre: " + nombre + ", Edad: " + edad);
+//     }
+// }
+// class Main {
+//     public static void main(String[] args) {
+//         // Creación de un objeto de la clase Persona
+//         Persona persona1 = new Persona("Leonardo", 29);
+//         Persona persona2 = new Persona("Vanesa", 30);
+//         Persona persona3 = new Persona("Juliana", 8);
+
+//         // Uso del objeto
+//         persona1.mostrarInfo(); // Llama al método para mostrar información
+//         persona2.mostrarInfo();
+//         persona3.mostrarInfo();
 //     }
 // }

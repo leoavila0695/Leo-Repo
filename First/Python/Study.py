@@ -151,7 +151,7 @@
 #    if  picture[l][c] == 0:
 #      picture[l][c] = ' '
 #      print(picture[l])
-#      l += 1    
+#      l += 1
 #      turn += 1    
 #    elif picture[l][c] == 1:
 #       picture[l][c] = "*"
@@ -179,13 +179,13 @@
 #   return n1 + n2
 # print(sum(n1,n2))
 
-# A NESTED function 
+# A NESTED function
 # for i in range(3):  # Outer loop
 #   for j in range(2):  # Inner loop
 #     print(f"Outer loop: {i}, Inner loop: {j}")
     
     
-  # Exercice 
+  # Exercice
 # def checkDriverAge():
 #   age = input("What is your age?: ")
 #   if int(age) < 18:
@@ -327,3 +327,22 @@
 
 # # Llamar al método estático
 # Cat.the_oldest(cats)
+
+
+# *args, **kwargs
+
+# def sumar(*args):
+#     return sum(args)
+
+# print(sumar(1, 2, 3,54,7897,45))  # Salida: 6
+# print(sumar(10, 20))   # Salida: 30
+
+def mostrar_informacion(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"{clave}: {valor}")
+
+mostrar_informacion(nombre="Juan", edad=30, profesion="Ingeniero")
+# Salida:
+# nombre: Juan
+# edad: 30
+# profesion: Ingeniero

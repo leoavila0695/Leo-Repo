@@ -140,18 +140,18 @@
 # pc = 0
 # player = 0
 # while game < 4 and pc < 2 and player < 2:
-#       try:            
+#       try:
 #             sel = int(input("let's play, so chose your option...\n1-Rock\n2-paper\n3-Scissors\nWhat would you rather..."))
 #             if sel not in [1, 2, 3]:
 #                   print ("this digit is not valid...try again")
 #                   continue
-#             else:               
+#             else:
 #                   cpu = random.randint(1, 3)
 #                   dec = {
 #                         1 : 'rock',
 #                         2 : 'Paper',
 #                         3 : 'Scissors'
-#                         }       
+#                         }
 #             if sel == cpu:
 #                   print(f"Cpu = {dec[cpu]} VS you = {dec[sel]} We're tie... ")
 #             elif sel == 1 and cpu == 2:
@@ -159,14 +159,14 @@
 #                   game += 1
 #                   pc += 1
 #             elif sel == 2 and cpu == 3:
-#                   print(f"Cpu = {dec[cpu]} VS you = {dec[sel]} I win...")  
+#                   print(f"Cpu = {dec[cpu]} VS you = {dec[sel]} I win...")
 #                   game += 1
 #                   pc += 1
 #             elif sel == 3 and cpu == 1:
-#                   print(f"Cpu = {dec[cpu]} VS you = {dec[sel]} I win...")  
-#                   game += 1 
-#                   pc += 1 
-#             else:            
+#                   print(f"Cpu = {dec[cpu]} VS you = {dec[sel]} I win...")
+#                   game += 1
+#                   pc += 1
+#             else:
 #                   print(f"Cpu = {dec[cpu]} VS you = {dec[sel]} You win...")
 #                   game += 1
 #                   player += 1
@@ -176,4 +176,4 @@
 #     print(f"I won the game! Final score: Cpu {pc} - You {player}")
 # else:
 #     print(f"Congratulations! You won the game! Final score: You {player} - Cpu {pc}")
-      
+
