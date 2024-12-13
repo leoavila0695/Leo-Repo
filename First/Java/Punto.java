@@ -159,3 +159,62 @@
 //         persona3.mostrarInfo();
 //     }
 // }
+
+
+// CASO PRACTICO 4 - Definición de la clase Punto
+// Importing random
+import java.util.Random;
+public class Punto {
+    //tributes
+    private int x;
+    private int y;
+    //Constructor
+    public Punto(int x,int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public Punto(int different){
+        this.x = different;
+        this.y = different;
+    }
+
+    public Punto(){
+        this.x = 0;
+        this.y = 0;
+
+    }
+
+    public void Pintar(){
+        System.out.println("Coordenadas x: " + this.x +", Coordenadas y: "+ this.y);
+    }
+}
+
+class Main {
+    public static void main (String[] args){
+
+        int[] array = new int[20];
+        Random random = new Random();
+
+        for (int i = 0; i < array.length; i++){
+            array[i] = random.nextInt(100);
+        }
+
+
+        Punto punto1 = new Punto(10, 8);
+        System.out.print("point 1: ");
+        punto1.Pintar();
+
+        Punto punto2 = new Punto(25);
+        System.out.print("point 2: ");
+        punto2.Pintar();
+
+        Punto punto3 = new Punto();
+        System.out.print("point 3: ");
+        punto3.Pintar();
+    }
+}
+
+
+
+
