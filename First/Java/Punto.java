@@ -193,14 +193,6 @@ public class Punto {
 class Main {
     public static void main (String[] args){
 
-        int[] array = new int[20];
-        Random random = new Random();
-
-        for (int i = 0; i < array.length; i++){
-            array[i] = random.nextInt(100);
-        }
-
-
         Punto punto1 = new Punto(10, 8);
         System.out.print("point 1: ");
         punto1.Pintar();
@@ -212,6 +204,20 @@ class Main {
         Punto punto3 = new Punto();
         System.out.print("point 3: ");
         punto3.Pintar();
+
+        
+        Random random = new Random();
+
+        int size = 1 + random.nextInt(20);
+        System.out.println("array points size: " + size);
+
+        int[] array = new int[20];
+        Random random = new Random();
+        // Random created - 4th point
+        for (int i = 0; i < array.length; i++){
+        array[i] = random.nextInt(100);
+            
+        }
     }
 }
 
