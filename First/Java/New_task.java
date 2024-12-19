@@ -5,7 +5,7 @@ public class New_task {
     }
 
     public String hello(){
-        return " and so...";
+        return " new work place";
     }
 
     public static void main(String[] var0){
