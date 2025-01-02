@@ -1,3 +1,4 @@
+
 # # Truthy and Falsy -> basically is that a value can be true or false
 # is_old = bool("hi")
 # is_licenced = bool(2)
@@ -337,12 +338,31 @@
 # print(sumar(1, 2, 3,54,7897,45))  # Salida: 6
 # print(sumar(10, 20))   # Salida: 30
 
-def mostrar_informacion(**kwargs):
-    for clave, valor in kwargs.items():
-        print(f"{clave}: {valor}")
+# def mostrar_informacion(**kwargs):
+#     for clave, valor in kwargs.items():
+#         print(f"{clave}: {valor}")
 
-mostrar_informacion(nombre="Juan", edad=30, profesion="Ingeniero")
+# mostrar_informacion(nombre="Juan", edad=30, profesion="Ingeniero")
 # Salida:
 # nombre: Juan
 # edad: 30
 # profesion: Ingeniero
+
+class PlayerCharacter:
+  membership = True
+  def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+  def shout(self):
+        print(f'my name is {self.name}')
+        
+  @classmethod
+  def adding_things(cls, num1, num2):
+    return num1 + num2
+                
+  player1 = PlayerCharacter('Tom', 20)
+  
+  print(player1.shout())
+  print(player1.adding_things(2,3))
+  
