@@ -373,3 +373,59 @@
 # # print(PlayerCharacter.adding_things(2,3))
 # # print(PlayerCharacter.adding_things(200,50))
 # # print(player1.shout())
+
+# class Persona:
+#     def _init_(self, nombre, edad):
+#         self.nombre = nombre  # Atributo público
+#         self._edad = edad    # Atributo privado (se encapsula usando _)
+    
+#     # Método público para obtener la edad
+#     def get_edad(self):
+#         return self.__edad
+    
+#     # Método público para cambiar la edad de manera controlada
+#     def set_edad(self, nueva_edad):
+#         if nueva_edad > 0:  # Verificamos que la edad sea válida
+#             self.__edad = nueva_edad
+#         else:
+#             print("La edad debe ser mayor a 0")
+    
+#     def mostrar_informacion(self):
+#         print(f"Nombre: {self.nombre}, Edad: {self.__edad}")
+
+# # Uso
+# persona = Persona("Alice", 25)
+# persona.mostrar_informacion()  # Salida: "Nombre: Alice, Edad: 25"
+
+# # Intentar acceder directamente al atributo privado (no funciona)
+# # print(persona.__edad)  # Esto dará un error
+
+# # Acceso controlado usando métodos
+# print(persona.get_edad())  # Salida: 25
+# persona.set_edad(30)
+# persona.mostrar_informacion()  # Salida: "Nombre: Alice, Edad: 30"
+
+class User():
+  def sign_in(self):
+    print("logged in" )
+    
+class Wizard(User):
+  def __init__(self, name, power):
+        self.name = name
+        self.power = power
+        
+  def attack(self):
+    print(f'attacking with power of {self.power}')
+    
+class Archer(User):
+    def __init__(self, name, arrows):
+      self.name = name
+      self.arrows = arrows
+    def attack(self):
+      print(f'attacking with arrows. Arrows left-> {self.arrows}')
+
+# isinstance(instance, Class)   -> in order to know the structure
+# to verify if an instance is in a class
+wizard1 = Wizard('leo', 100)
+wizard1.
+print(isinstance(wizard1, Wizard))
