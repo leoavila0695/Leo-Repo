@@ -16,19 +16,19 @@ def time_overlap(event1, event2):
     else:
         return False, None, None
 
-# First event
+# First user event
 print('Please write the starting time of your 1st event (example"10:30"): ')
 start1 = input()
 print('Please write the ending time of your 1st event (example"15:00"): ')
 end1 = input()
 
-# Second event
+# Second user event
 print('Please write the starting time of your 2nd event (example"10:30"): ')
 start2 = input()
 print('Please write the ending time of your 2nd event (example"15:00"): ')
 end2 = input()
 
-# Third event
+# Third user event
 print('Please write the starting time of your 3rd event (example"10:30"): ')
 start3 = input()
 print('Please write the ending time of your 3rd event (example"15:00"): ')
