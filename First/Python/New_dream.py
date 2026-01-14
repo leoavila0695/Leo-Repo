@@ -177,3 +177,16 @@
 # else:
 #     print(f"Congratulations! You won the game! Final score: You {player} - Cpu {pc}")
 
+
+#remember to ctrl+F5 to run the code
+
+#name = input("what is your name: ")
+#print("Then your name is " + name + " my pleasure")
+# print(type(True))
+# print(2 ** 4) #two to the power of four or to the four
+# print(type(4 / 2)) #divided by float result
+# print(type(4 // 2)) #divided by integer result
+# print(6 % 4) #only the remainder of the division remains
+# print(bin(1 ))
+
+
