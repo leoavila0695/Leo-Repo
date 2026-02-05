@@ -189,4 +189,44 @@
 # print(6 % 4) #only the remainder of the division remains
 # print(bin(1 ))
 
+# (to comment the coding line you must press Ctrl + /)
+# user_name = input("Write your user name: ")
+# password = input("Write your password: ")
+# password_hidden = ("*" * len(password)) 
+# print (f"Your user is: {user_name}\nYour password is: {password_hidden}")
 
+
+# students = {}
+# while True:
+#   name = input("Enter student name (or 'stop' to finish): ")
+#   if name.lower() == "stop":
+#     break
+#   grade = int(input(f"Enter grade for {name}: "))
+#   students[name] = grade
+
+# print("All student and grades:")
+# print(students)
+
+
+# search = input("Enter a student name to see their grade: ")
+# if search in students:
+#   print(f"{search}'s grade is {students[search]}")
+# else:
+#   print("Student not found.")
+
+cart = {}
+while True:
+  product = input("Welcome to your cart\nplease type the products you want to be added into your list or type 'done' to close the list: ")
+  if product.lower() == "done":
+    break
+  price = int(input("How much does it cost?: "))
+  cart[product] = price
+  if cart[product] == product:
+    cart.update({product : price}) 
+
+print(f"these are you're items: {cart}")
+x = 0
+for i in cart.values():
+  x = x + i
+
+print(f"The total is: {x}")
