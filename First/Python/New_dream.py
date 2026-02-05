@@ -222,11 +222,19 @@ while True:
   price = int(input("How much does it cost?: "))
   cart[product] = price
   if cart[product] == product:
-    cart.update({product : price}) 
+    cart.update({product : price}) #Redundant update block
 
 print(f"these are you're items: {cart}")
+# To improve the printing, it is better to do it in the following way:
+# print("These are your items:")
+# for item, price in cart.items():
+#     print(f"- {item}: ${price}")
+
+
+
 x = 0
 for i in cart.values():
-  x = x + i
+  x = x + i  #Instead of looping, use summing
+# x = sum(cart.values())
 
-print(f"The total is: {x}")
+print(f"The total of your purchases is: {x}")
